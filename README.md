@@ -24,7 +24,7 @@ In simple terms, convolution is simply the process of taking a small matrix call
 
 To start off, we’ll need the Gaussian function in two dimensions:
 
-![alt text](https://miro.medium.com/max/376/0*Qyt87iKttnjvkxz8)
+![alt text](https://patentimages.storage.googleapis.com/WO2010053874A1/imgf000014_0001.png)
 
 The values from this function will create the convolution matrix / kernel that we’ll apply to every pixel in the original image. The kernel is typically quite small — the larger it is the more computation we have to do at every pixel.
 
