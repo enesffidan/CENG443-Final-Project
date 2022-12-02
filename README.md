@@ -30,6 +30,19 @@ The values from this function will create the convolution matrix / kernel that w
 
 ![alt text](https://datacarpentry.org/image-processing/fig/blur-demo.gif)
 
+## Project Idea
+
+I will focus on comparison of three implementations of Gaussian Image Blur Algorithm:
+
+1- CPU based sequential
+
+2- Naive CUDA
+
+3- Shared Memory CUDA
+
+In this project, during the parallelization phase, I expect to observe performance improvement from paralleling by assigning the blur operations for different pixels to different threads. 
+
+
 
 
 # Implementation Details
