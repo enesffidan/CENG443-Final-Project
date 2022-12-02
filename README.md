@@ -32,7 +32,8 @@ The values from this function will create the convolution matrix / kernel that w
 
 > ![alt text](https://miro.medium.com/max/1322/1*sCUNjAOQvXc3dr8dcSSfoA.gif)
 
-> ![alt text](https://datacarpentry.org/image-processing/fig/blur-demo.gif)
+> ![alt text](https://help.apple.com/assets/616F5622BAB36D3B5D3630C2/616F5624BAB36D3B5D3630D1/en_US/a67af9dfbb0903248432d98f8e5033f1.png)
+
 
 
 
