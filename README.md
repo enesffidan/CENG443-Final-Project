@@ -20,15 +20,15 @@ It is aimed to greatly improve the performance and execution time metrics by imp
 ## Gaussian Image Blur
 In simple terms, convolution is simply the process of taking a small matrix called the kernel and running it over all the pixels in an image. At every pixel, we’ll perform some math operation involving the values in the convolution matrix and the values of a pixel and its surroundings to determine the value for a pixel in the output image.
 
-![alt text](https://miro.medium.com/max/1400/0*5ZACjFtA_b6WFDUn)
+> ![alt text](https://miro.medium.com/max/1400/0*5ZACjFtA_b6WFDUn)
 
 To start off, we’ll need the Gaussian function in two dimensions:
 
-![alt text](https://patentimages.storage.googleapis.com/WO2010053874A1/imgf000014_0001.png)
+> ![alt text](https://patentimages.storage.googleapis.com/WO2010053874A1/imgf000014_0001.png)
 
 The values from this function will create the convolution matrix / kernel that we’ll apply to every pixel in the original image. The kernel is typically quite small — the larger it is the more computation we have to do at every pixel.
 
-![alt text](https://datacarpentry.org/image-processing/fig/blur-demo.gif)
+> ![alt text](https://datacarpentry.org/image-processing/fig/blur-demo.gif)
 
 
 ## Project Idea
