@@ -28,7 +28,12 @@ To start off, we’ll need the Gaussian function in two dimensions:
 
 The values from this function will create the convolution matrix / kernel that we’ll apply to every pixel in the original image. The kernel is typically quite small — the larger it is the more computation we have to do at every pixel.
 
+
+
+> ![alt text](https://miro.medium.com/max/1322/1*sCUNjAOQvXc3dr8dcSSfoA.gif)
+
 > ![alt text](https://datacarpentry.org/image-processing/fig/blur-demo.gif)
+
 
 
 ## Project Idea
