@@ -30,6 +30,7 @@ The values from this function will create the convolution matrix / kernel that w
 
 ![alt text](https://datacarpentry.org/image-processing/fig/blur-demo.gif)
 
+
 ## Project Idea
 
 I will focus on comparison of three implementations of Gaussian Image Blur Algorithm:
