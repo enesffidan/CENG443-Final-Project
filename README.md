@@ -1,75 +1,84 @@
 
 
 
-![alt text](https://kornia.readthedocs.io/en/v0.4.1/_images/sphx_glr_gaussian_blur_001.png)
+![alt text](https://i.ytimg.com/vi/pSqmAO-m7Lk/maxresdefault.jpg)
 
 
 # CENG443 Heterogeneous Parallel Programing - Final project
 
-- **Subject:** Paralleling Gaussian Image Blur with CUDA 
+- **Subject:** Paralleling Dijkstra's Shortesh Path Algorithm with Cuda 
 - **Student:** Enes Furkan Fidan - 250201028
 - **Instructor:** Işıl Öz
+
+| Deadlines | Date   | Status    |
+| :---:   | :---: | :---: |
+| Github Page | 2 February | In review   |
+| First Version | 15 February | To-Do  |
+| Meeting | 29 February | To-Do   |
+| Final Version | 5 January | To-Do   |
+
 
 
 
 # Problem Definition
-In image blurring, a calculation is made for a pixel, including the values of the surrounding pixels. The main problem is that the execution time and CPU need increase due to the fact that the same process is done for all the pixels in the picture one by one.
 
-It is aimed to greatly improve the performance and execution time metrics by implementing this problem in a data-parallel manner and making a gpu based implementation.
+In the implementation of shortest path algorithms, the same operations are repeated for more than one associated node and a continuous update is made. Continuously updating some data is not an efficient situation in parallel approaches.
 
-## Gaussian Image Blur
-In simple terms, convolution is simply the process of taking a small matrix called the kernel and running it over all the pixels in an image. At every pixel, we’ll perform some math operation involving the values in the convolution matrix and the values of a pixel and its surroundings to determine the value for a pixel in the output image.
+In this project, I aim to observe that there will be some performance improvements by implementing GPU-based algorithm in a data-parallel way. When I examine some similar applications, I aim to observe that the performance efficiency of parallel implantation will be better, especially when the number of nodes exceeds a certain threshold.
 
-> ![alt text](https://miro.medium.com/max/1400/0*5ZACjFtA_b6WFDUn)
+## Dijkstra's Algorithm
+With [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm), you can find the shortest path between nodes in a graph. Particularly, you can find the shortest path from a node (called the "source node") to all other nodes in the graph, producing a shortest-path tree.
 
-To start off, we’ll need the Gaussian function in two dimensions:
+![alt text](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
 
-> ![alt text](https://patentimages.storage.googleapis.com/WO2010053874A1/imgf000014_0001.png)
+- Dijkstra's Algorithm basically starts at the node that you choose (the source node) and it analyzes the graph to find the shortest path between that node and all the other nodes in the graph.
+- The algorithm keeps track of the currently known shortest distance from each node to the source node and it updates these values if it finds a shorter path.
+- Once the algorithm has found the shortest path between the source node and another node, that node is marked as "visited" and added to the path.
+- The process continues until all the nodes in the graph have been added to the path. This way, we have a path that connects the source node to all other nodes following the shortest path possible to reach each node.
 
-The values from this function will create the convolution matrix / kernel that we’ll apply to every pixel in the original image. The kernel is typically quite small — the larger it is the more computation we have to do at every pixel.
+**Serial Implementation Steps**
 
+1- Initialize start node and set the distance to 0.
 
+2- Initilize shortest path array, where the vertices with a shortest path found will be placed and place source node within.
 
-> ![alt text](https://miro.medium.com/max/1322/1*sCUNjAOQvXc3dr8dcSSfoA.gif)
+3- From the nodes in the shortest path array, find the shortest neighbor node which is not visited.
 
+4- Add this node to the shortest path array.
 
+5- Update the minimum distance to each unvisited nodes.
 
-## Project Idea
+6- Repeat from the step 3 until the destination reached, or until all nodes have been visited.
 
-I will focus on comparison of three implementations of Gaussian Image Blur Algorithm:
-
-1- CPU based sequential
-
-2- Naive CUDA
-
-3- Shared Memory CUDA
-
-In this project, during the parallelization phase, I expect to observe performance improvement from paralleling by assigning the blur operations for different pixels to different threads. 
+**Time Complexity of Serial Version is 𝑂(𝑛2).**
 
 
+# Parallization
+
+* Threads join to find the minimum distance from source then each thread updates the minimum distance from each of its unvisited nodes to the source node.
+> ******NOTE:****** More detail will be added to this section.
 
 
 # Implementation Details
-> ******NOTE:****** This and following parts will implement later
+> ******NOTE:****** This part will implement later.
 
 ## Data Parallel Approach
 
-## Explanation of Parallelization Steps
-
 
 # Experimental Works
+> ******NOTE:****** This part will implement later.
 
 ## Performance Tests
 
 ## Execution Tests
 
 
-
-
 # Future Works
+> ******NOTE:****** This part will implement later.
 
 # Conclusion
+> ******NOTE:****** This part will implement later.
 
 # Reports
 Report format: https://www.ieee.org/conferences/publishing/templates.html
-
+> ******NOTE:****** This part will implement later.
