@@ -12,8 +12,8 @@
 
 | Deadlines | Date   | Status    |
 | :---:   | :---: | :---: |
-| Github Page | 2 February | In review   |
-| First Version | 15 February | To-Do  |
+| Github Page | 2 February | Done  |
+| First Version | 15 February | In Review  |
 | Meeting | 29 February | To-Do   |
 | Final Version | 5 January | To-Do   |
 
