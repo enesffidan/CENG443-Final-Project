@@ -55,30 +55,10 @@ With [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 
 # Parallization
 
-* Threads join to find the minimum distance from source then each thread updates the minimum distance from each of its unvisited nodes to the source node.
-> ******NOTE:****** More detail will be added to this section.
+Parallel priority queue approach used in the final version. Multiple threads can access and update the priority queue to find the shortest paths.
+
+# Problems
+- **Data Dependencies:** Algorithm process relies on maintaning the correct distances between vertices and these distances can be updated as the algorithm proceeds.
+- **Load Balancing:** It is important to ensure that the work is evenly distributed among threads. If it is not, some threads may idle while others overloaded.
 
 
-# Implementation Details
-> ******NOTE:****** This part will implement later.
-
-## Data Parallel Approach
-
-
-# Experimental Works
-> ******NOTE:****** This part will implement later.
-
-## Performance Tests
-
-## Execution Tests
-
-
-# Future Works
-> ******NOTE:****** This part will implement later.
-
-# Conclusion
-> ******NOTE:****** This part will implement later.
-
-# Reports
-Report format: https://www.ieee.org/conferences/publishing/templates.html
-> ******NOTE:****** This part will implement later.
